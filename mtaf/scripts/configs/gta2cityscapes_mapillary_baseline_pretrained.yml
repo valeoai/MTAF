@@ -1,0 +1,10 @@
+EXP_NAME: gta2cityscapes_mapillary_baseline_pretrained
+SOURCE: GTA
+TARGETS:
+    - Cityscapes
+    - Mapillary
+NUM_WORKERS: 4
+TEST:
+  MODE: single
+  RESTORE_FROM:
+    - ../../pretrained_models/gta2cityscapes_mapillary_baseline.pth

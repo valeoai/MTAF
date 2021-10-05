@@ -1,0 +1,23 @@
+EXP_NAME: gta2cityscapes_mapillary_mtkt
+SOURCE: GTA
+TARGETS:
+    - Cityscapes
+    - Mapillary
+NUM_WORKERS: 4
+TRAIN:
+  MT_FRAMEWORK: MTKT
+  MODEL: DeepLabv2MTKT
+  AMP: True
+  RESTORE_FROM: ../../pretrained_models/DeepLab_resnet_pretrained_imagenet.pth
+  BATCH_SIZE_SOURCE: 4
+  BATCH_SIZE_TARGET: 4
+  LAMBDA_SEG_MAIN: 4.0
+  LAMBDA_SEG_AUX: 0.4
+  LAMBDA_ADV_MAIN: 0.004
+  LAMBDA_ADV_AUX: 0.0008
+  LAMBDA_KL_TARGET: 4.0
+  TEACHER_ITERS: 20000
+TEST:
+  MODE: best
+  MODEL:
+    - DeepLabv2MTKT

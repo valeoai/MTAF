@@ -1,0 +1,13 @@
+EXP_NAME: gta2cityscapes_mapillary_baseline
+SOURCE: GTA
+TARGETS:
+    - Cityscapes
+    - Mapillary
+NUM_WORKERS: 4
+TRAIN:
+  MT_FRAMEWORK: Baseline
+  RESTORE_FROM: ../../pretrained_models/DeepLab_resnet_pretrained_imagenet.pth
+  LAMBDA_ADV_MAIN: 0.001
+  LAMBDA_ADV_AUX: 0.0002
+TEST:
+  MODE: best
