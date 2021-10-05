@@ -18,7 +18,6 @@ from mtaf.utils.func import adjust_learning_rate, adjust_learning_rate_discrimin
 from mtaf.utils.func import loss_calc, bce_loss
 from mtaf.utils.loss import entropy_loss, kl_divergence, mse_loss
 from mtaf.utils.func import prob_2_entropy
-from mtaf.utils.viz_segmask import colorize_mask
 
 def train_advent(model, source_loader, target_loader_list, cfg):
     ''' UDA training with advent
