@@ -4,7 +4,7 @@
 ![](./teaser.png)
 
 [Multi-Target Adversarial Frameworks for Domain Adaptation in Semantic Segmentation](https://arxiv.org/abs/2108.06962)  
- Antoine Saporta, [Tuan-Hung Vu](https://tuanhungvu.github.io/), [Matthieu Cord](http://webia.lip6.fr/~cord/), [Patrick Pérez](https://ptrckprz.github.io/)  
+ [Antoine Saporta](https://www.linkedin.com/in/antoine-saporta-08a503227/), [Tuan-Hung Vu](https://tuanhungvu.github.io/), [Matthieu Cord](http://webia.lip6.fr/~cord/), [Patrick Pérez](https://ptrckprz.github.io/)  
  valeo.ai, France  
  IEEE International Conference on Computer Vision (ICCV), 2021 (**Poster**)
 
