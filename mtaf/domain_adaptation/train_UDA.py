@@ -814,7 +814,7 @@ def train_advent_mtkt(model, source_loader, target_loader_list, cfg):
         else:
             loss.backward()
 
-        # adversarial training ot fool the discriminators
+        # adversarial training to fool the discriminators
         # train on target if pseudo-labels
         pred_trg_aux_list = []
         pred_trg_aux_trg_list = []
