@@ -104,6 +104,7 @@ cfg.TEST.INPUT_SIZE_TARGET = (640, 320)
 cfg.TEST.OUTPUT_SIZE_TARGET = (640, 320)
 cfg.TEST.INFO_TARGET = (str(project_root / 'mtaf/dataset/cityscapes_list/info.json'),)
 cfg.TEST.WAIT_MODEL = True
+cfg.TEST.SCALE_LABEL = True
 
 def _merge_a_into_b(a, b):
     """Merge config dictionary a into config dictionary b, clobbering the

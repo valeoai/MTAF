@@ -76,7 +76,7 @@ def main(config_file, exp_suffix):
                                             crop_size=cfg.TEST.INPUT_SIZE_TARGET,
                                             mean=cfg.TEST.IMG_MEAN,
                                             labels_size=cfg.TEST.OUTPUT_SIZE_TARGET,
-                                            scale_label=False)
+                                            scale_label=cfg.TEST.SCALE_LABEL)
         elif target == 'IDD':
             test_dataset = IDDDataSet(root=cfg.DATA_DIRECTORY_TARGET[i],
                                              list_path=cfg.DATA_LIST_TARGET[i],
