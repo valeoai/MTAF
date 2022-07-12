@@ -755,9 +755,9 @@ def train_advent_mtkt(model, source_loader, target_loader_list, cfg):
             d_aux, optimizer_d_aux = amp.initialize(
                 d_aux_list[i], optimizer_d_aux, opt_level=cfg.TRAIN.AMP_OPTIM
             )
-        d_main_list[i] = d_main
+            d_main_list[i] = d_main
+            d_aux_list[i] = d_aux
         optimizer_d_main_list.append(optimizer_d_main)
-        d_aux_list[i] = d_aux
         optimizer_d_aux_list.append(optimizer_d_aux)
 
     # interpolate output segmaps
